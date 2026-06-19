@@ -190,30 +190,30 @@ section.board {
     white-space: nowrap;
 }
 
-.priority-low {
+.priority-normal {
     background: rgba(52,211,153,0.16);
     color: #34d399;
 }
 
-.priority-medium {
+.priority-important {
     background: rgba(59,130,246,0.16);
     color: #7dd3fc;
 }
 
-.priority-high {
+.priority-urgent {
     background: rgba(248,113,113,0.16);
     color: #f87171;
 }
 
-.task.priority-low {
+.task.priority-normal {
     border-left: 4px solid #34d399;
 }
 
-.task.priority-medium {
+.task.priority-important {
     border-left: 4px solid #60a5fa;
 }
 
-.task.priority-high {
+.task.priority-urgent {
     border-left: 4px solid #f87171;
 }
 
@@ -360,17 +360,17 @@ section.board {
     content: '';
 }
 
-.priority-low,
-.priority-medium,
-.priority-high {
+.priority-normal,
+.priority-important,
+.priority-urgent {
     color: var(--text);
     background: rgba(255,255,255,0.06);
     border-color: rgba(255,255,255,0.1);
 }
 
-.task.priority-low,
-.task.priority-medium,
-.task.priority-high {
+.task.priority-normal,
+.task.priority-important,
+.task.priority-urgent {
     border-left: 3px solid rgba(255,255,255,0.12);
 }
 
@@ -382,15 +382,15 @@ section.board {
     margin-bottom: 12px;
 }
 
-.task.priority-low {
+.task.priority-normal {
     border-left: 4px solid rgba(56, 189, 248, 0.4);
 }
 
-.task.priority-medium {
+.task.priority-important {
     border-left: 4px solid rgba(168, 85, 247, 0.45);
 }
 
-.task.priority-high {
+.task.priority-urgent {
     border-left: 4px solid rgba(249, 115, 22, 0.45);
 }
 

@@ -4,12 +4,12 @@ const todo = document.querySelector('#todo');
 const progress = document.querySelector('#progress');
 const done = document.querySelector('#done');
 const columns = [todo, progress, done];
-let selectedPriority = 'Medium';
+let selectedPriority = 'Important';
 const priorityOptionButtons = document.querySelectorAll('.priority-option');
 let dragElement = null;
 
 function resetPrioritySelection() {
-    selectedPriority = 'Medium';
+    selectedPriority = 'Important';
     priorityOptionButtons.forEach(button => {
         button.classList.toggle('active', button.dataset.priority === selectedPriority);
     });
