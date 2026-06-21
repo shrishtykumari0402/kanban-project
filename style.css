@@ -190,30 +190,30 @@ section.board {
     white-space: nowrap;
 }
 
-.priority-normal {
+.priority-standard {
     background: rgba(52,211,153,0.16);
     color: #34d399;
 }
 
-.priority-important {
+.priority-essential {
     background: rgba(59,130,246,0.16);
     color: #7dd3fc;
 }
 
-.priority-urgent {
+.priority-prime {
     background: rgba(248,113,113,0.16);
     color: #f87171;
 }
 
-.task.priority-normal {
+.task.priority-standard {
     border-left: 4px solid #34d399;
 }
 
-.task.priority-important {
+.task.priority-essential {
     border-left: 4px solid #60a5fa;
 }
 
-.task.priority-urgent {
+.task.priority-prime {
     border-left: 4px solid #f87171;
 }
 
@@ -232,6 +232,31 @@ section.board {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.task-actions button {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.edit-btn {
+    background: rgba(255,255,255,0.08);
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.12);
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: white;
 }
 
 .task:hover {
@@ -360,17 +385,17 @@ section.board {
     content: '';
 }
 
-.priority-normal,
-.priority-important,
-.priority-urgent {
+.priority-standard,
+.priority-essential,
+.priority-prime {
     color: var(--text);
     background: rgba(255,255,255,0.06);
     border-color: rgba(255,255,255,0.1);
 }
 
-.task.priority-normal,
-.task.priority-important,
-.task.priority-urgent {
+.task.priority-standard,
+.task.priority-essential,
+.task.priority-prime {
     border-left: 3px solid rgba(255,255,255,0.12);
 }
 
@@ -382,15 +407,15 @@ section.board {
     margin-bottom: 12px;
 }
 
-.task.priority-normal {
+.task.priority-standard {
     border-left: 4px solid rgba(56, 189, 248, 0.4);
 }
 
-.task.priority-important {
+.task.priority-essential {
     border-left: 4px solid rgba(168, 85, 247, 0.45);
 }
 
-.task.priority-urgent {
+.task.priority-prime {
     border-left: 4px solid rgba(249, 115, 22, 0.45);
 }
 

@@ -52,12 +52,18 @@
                 <textarea 
                 id="task-desc-input"
                 placeholder="Task Description"></textarea>
+                <label for="task-status-select">Status</label>
+                <select id="task-status-select">
+                    <option value="todo">To do</option>
+                    <option value="progress">In Progress</option>
+                    <option value="done">Done</option>
+                </select>
                 <div class="priority-picker">
                     <span>Priority</span>
                     <div class="priority-options">
-                        <button type="button" class="priority-option" data-priority="Normal">Normal</button>
-                        <button type="button" class="priority-option active" data-priority="Important">Important</button>
-                        <button type="button" class="priority-option" data-priority="Urgent">Urgent</button>
+                        <button type="button" class="priority-option" data-priority="Prime">⚡ Prime</button>
+                        <button type="button" class="priority-option active" data-priority="Essential">⭐ Essential</button>
+                        <button type="button" class="priority-option" data-priority="Standard">📄 Standard</button>
                     </div>
                 </div>
                 <button id="add-new-task"
