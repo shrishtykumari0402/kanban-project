@@ -366,6 +366,24 @@ section.board {
     padding-right: 40px;
 }
 
+.modal select option {
+    background: #1f1f1f;
+    color: white;
+    padding: 10px;
+    margin: 4px 0;
+    border: none;
+}
+
+.modal select option:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.modal select option:checked {
+    background: #2563eb;
+    color: white;
+}
+
 .priority-pill {
     display: inline-flex;
     align-items: center;
